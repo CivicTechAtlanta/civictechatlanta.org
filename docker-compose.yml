@@ -1,0 +1,10 @@
+name: civic-tech-site
+
+services:
+  frontend:
+    image: jekyll/jekyll:4
+    entrypoint : .entrypoint/jekyll-start.sh
+    ports:
+      - 3000:3000
+    volumes:
+      - ./srv:/srv/jekyll:ro
