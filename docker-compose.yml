@@ -1,10 +1,13 @@
 name: civic-tech-site
 
 services:
-  frontend:
-    image: jekyll/jekyll:4
-    entrypoint : .entrypoint/jekyll-start.sh
-    ports:
-      - 3000:3000
-    volumes:
-      - ./srv:/srv/jekyll:ro
+  jekyll:
+      image: jvconseil/jekyll-docker:4
+      environment:
+        - JEKYLL_ENV=development
+      command: jekyll serve --verbose --trace --incremental --verbose --host 0.0.0.0
+      ports:
+          - 4000:4000
+      volumes:
+          - ./src:/srv/jekyll/
+          - ./vendor/bundle:/usr/local/bundle:cached
