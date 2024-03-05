@@ -1,0 +1,13 @@
+name: civic-tech-site
+
+services:
+  jekyll:
+      image: jvconseil/jekyll-docker:4
+      environment:
+        - JEKYLL_ENV=development
+      command: jekyll serve --verbose --trace --incremental --verbose --host 0.0.0.0
+      ports:
+          - 4000:4000
+      volumes:
+          - ./src:/srv/jekyll/
+          - ./vendor/bundle:/usr/local/bundle:cached
