@@ -1,6 +1,6 @@
 ---
-permalink: /volunteer.html
 layout: default
+permalink: /volunteer
 ---
 
 <iframe
