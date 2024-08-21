@@ -11,4 +11,6 @@ Run the following command in a terminal:
 docker compose up -d 
 ```
 
+View your locally deployed site at http://localhost:4000
+
 This should be all you need to get the project up and running
