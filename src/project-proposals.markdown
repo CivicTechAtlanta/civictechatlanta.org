@@ -8,21 +8,7 @@ We love new projects!
 
 If you have an idea that you think would be amazing, submit the form below to tell us about it!
 
-<button id="openFormButton">Submit Project Proposal</button>
-
-<div id="formModal">
-  <div id="modalContent">
-    <span id="closeFormButton">&times;</span>
-    <iframe
-      id="formIframe"
-      src="https://docs.google.com/forms/d/e/1FAIpQLSeZmX_rSOAq6P66FPpIGjhCkqWYotObgsK0_yePYnvriWOCYQ/viewform"
-      title="Submit Project Proposal"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
-    ></iframe>
-  </div>
-</div>
+<button onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSeZmX_rSOAq6P66FPpIGjhCkqWYotObgsK0_yePYnvriWOCYQ/viewform', '_blank')">Submit Project Proposal</button>
 
 [//]: # (TODO: fix console errors)
 
@@ -52,52 +38,3 @@ If we decide to move forward with the project, we will have you fill out these f
 * [Impact Measurement Worksheet](https://docs.google.com/forms/d/e/1FAIpQLSdwVb7-ES5Ur576oiuo6yeymibZunFDjEcsvyUO2kAkD5xgZQ/viewform)
 * [Racial Equity, Inclusion, & Accessibility Worksheet](https://docs.google.com/forms/d/e/1FAIpQLSfp2P6AsLchp5aWDRczbP1Hy4n4VE3HOgVB0AfJoBZCEFTSvg/viewform)
 * [Resourcing, Roles and Feasibility Worksheet](https://docs.google.com/forms/d/e/1FAIpQLSdYG3WFjGjU8MxyCuqLpNd-feYNgoopxyehNYx3sz-AmQuVdA/viewform)
-
-
-
-<style>
-  #formModal {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  #modalContent {
-    position: relative;
-    width: 80%;
-    max-width: 1200px;
-    height: 80%;
-    margin: 5% auto;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    border-radius: 10px;
-  }
-
-  #closeFormButton {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    font-size: 1.5rem;
-  }
-
-  #formIframe {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-  }
-</style>
-
-<script>
-  document.getElementById('openFormButton').onclick = function() {
-    document.getElementById('formModal').style.display = 'block';
-  };
-  document.getElementById('closeFormButton').onclick = function() {
-    document.getElementById('formModal').style.display = 'none';
-  };
-</script>
