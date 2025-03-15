@@ -1,1 +1,78 @@
 /* Civic Tech Atlanta styles */
+
+/* Theme breakpoints: 
+    - width ≤ 800px = tablet
+    - width ≤ 600px = phone
+    - else = desktop
+*/
+
+h2 {
+    color: #DE1248;
+    font-family: Arial;
+    font-weight: 700;
+    margin-top: 2.5rem;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+#home-actions-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    background-color: #DE1248;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+    h3 {
+        color: #fff;
+    }
+    
+    .home-action {
+        flex: 1 1 30%;
+        min-width: 134px;
+        max-width: 400px;
+        padding: 10px;
+        box-sizing: border-box;
+        color: #fff;
+        
+        a {
+            display: inline-block;
+            box-sizing: border-box;
+            width: 100%;
+            background-color: #fff;
+            text-align: center;
+            color:#DE1248;
+            padding: 8px;
+            border-radius: 4px;
+        }
+        
+        p {
+            min-height: 72px;
+        }
+    }
+    
+    /* Stack actions when on mobile view */
+    @media screen and (max-width: 800px) {
+        .home-action {
+            flex: 1 1 100%;
+        }
+    }
+}
+
+#principles-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    
+    .principle {
+        flex: 1 1 calc(50% - 10px);
+        min-width: 200px;
+        max-width: 400px;
+        /* padding: 20px; */
+        box-sizing: border-box;
+    }
+}
