@@ -1,5 +1,5 @@
 # civictechatlanta
-Civic Tech Atlanta's main website
+A proposed alternative option for Civic Tech Atlanta's website
 
 # Getting Started
 
